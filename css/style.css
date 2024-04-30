@@ -36,7 +36,7 @@ nav ul li a {
 .cont-btn{
   padding: 25px 0;
 }
-nav ul li a i {
+nav ul li i {
   color: #777;
   text-decoration: none;
   padding: 15px 10px;
@@ -62,7 +62,7 @@ nav ul li a.cont-btn:hover{
   width: 100%;
 }
 div.top-image {
-  background-image: url('/lp-practice/images/keyvisual/keyvisual.jpg');
+  background-image: url('/images/keyvisual/keyvisual.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -176,9 +176,9 @@ table td {
 }
 .bkgr-link-grp{
   background: #e3f2fd;
+  display: flex;
 }
 .link-grp{
-  display: flex;
   flex-direction: row;
   align-items: center;
   text-align: center;
