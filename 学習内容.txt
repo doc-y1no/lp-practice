@@ -1,0 +1,85 @@
+html　クラスやセクションの分け方の考え方：
+section（画面の一くくりの場所　navや、main、formなど）
+それぞれのsectionで’100%’を指定するsection全体のサイズを指定
+次にclass="inner"をsection内の要素を束ねるプロパティを作り、要素のwidthを指定（今回は1100px）
+
+画像６個の箇所は、画像がいくつも増えてもいいようにフレキシブルに作成する必要がある。
+一番簡単で、作れるのは、gridでgapを指定すると作りやすい
+
+
+https://homeatlast.co.jp/font-awesome.html
+＜Font Awesomeとは？＞
+  自身のwebサイトやブログでwebアイコンフォントを表示できるサービス
+  ・商標利用が可能
+  ・サイズや色、アニメーションをつけたりカスタマイズすることも可能
+
+＜Font Awesomeの読み込み方法＞
+  使用するためには、Font Awesomeを読み込む必要があります。
+  方法が3つあるので詳しく説明していきます。
+
+■CDNを使う
+  以下コピーしてhead内に記載。
+  <link href=”https://use.fontawesome.com/releases/v6.0.0/css/all.css” rel=”stylesheet”>
+■サーバーにファイルを配置して読み込む
+  Font Awesomのサイト上でアカウント作成を行いファイルをダウンロードして、自身のサーバーにアップロードする方法。
+  アップロード後は方法1と同じようにhead内に配置すればOK。
+■Kitを使う
+  最新版では、「Kit」というものでFont Awesomeの読み込みができるようになった。
+  Font Awesomのサイト上でアカウント作成を行い、Kitを選択すると埋め込み用のコードが表示される。
+  コードをコピーしてhead内に記載。
+  <script src=”https://kit.fontawesome.com/固有のコード.js” crossorigin=”anonymous”></script>
+
+＜Font Awesomeの使い方＞
+１.Font Awesomeサイトから表示したいアイコンを選ぶ。
+https://fontawesome.com/icons
+２.コピーして表示したいところに貼り付け
+
+３，サイズを変更する
+「fa-サイズ」クラスを指定することでアイコンのサイズを変更できる。
+fa-2xs(0.625em)
+fa-2x (2倍)　※10倍も指定可能
+
+＜ソース＞
+<i class=”fa-solid fa-ice-cream fa-1x”></i>
+<i class=”fa-solid fa-ice-cream fa-10x”></i>
+
+４,色を変更する
+色の変更をしたい場合は、style属性で指定
+＜ソース＞
+<i class=”fa-solid fa-ice-cream” style=”color:pink;”></i>
+※tyle属性で指定していますが、CSSで設定することもできる
+
+５,アニメーション
+サイズ変更と同じようにクラスに設定を追加するだけで、アニメーションも簡単に実装できる。
+fa-beat　膨らんだり縮んだりする
+fa-fade　薄くなったり濃くなったりする
+fa-beat-fade　beatとfadeどちらも起こる
+fa-bounce　跳ねる
+fa-flip　縦軸に横回転
+fa-shake　震える
+fa-spin　横に回る
+
+５、重ねて表示
+「fa-stack」クラスで囲むことで、Font Awesome同士を重ねて表示することもできる
+<span class=”fa-stack”>
+<i class=”アイコンクラス名　fa-stack-2x”></i>
+  <i class=”アイコンクラス名　fa-stack-1x”></i>
+</span>
+
+その他にも、向きや角度、アイコンを囲ったり簡単にカスタマイズすることができる
+その他詳細は公式サイト参照
+https://fontawesome.com/docs/web/style/styling
+
+上記は簡単な表示設定のみ、CSSの疑似要素で使うこともできる
+
+
+
+要素の3×3表示の方法
+flexを使用の参照先
+https://mamewaza.com/support/blog/howto-use-flex.html?_fsi=ok9e1gas
+
+
+
+質問事項
+nav　左と右端によるよるように作成必要か。
+やるとしたらどうするか。
