@@ -52,6 +52,13 @@ nav ul li a.cont-btn{
 nav ul li a.cont-btn:hover{
   background-color: #333;
 }
+
+nav ul li.hamburger {
+  display: none; /* デフォルトでは非表示にする */
+  cursor: pointer;
+  padding: 10px;
+  font-size: 24px; /* アイコンのサイズを指定 */
+}
 .main{
   width: 100%;
 }
@@ -69,7 +76,6 @@ div.top-image {
   font-weight: 700;
   color: #ffffff;
 }
-
 .text-1{
   padding-bottom: 30px;
   text-align: center;
@@ -82,7 +88,6 @@ div.top-image {
   font-size: 40px;
   font-weight: 700;
 }
-
 .pc-image-section{
   display: grid;
   grid-template-columns: 40% 60%;
@@ -118,7 +123,6 @@ div.top-image {
   line-height: 18px;
   font-size: 15px
 }
-
 .skills-section{
   padding-bottom: 70px;
 }
@@ -128,7 +132,6 @@ div.top-image {
   letter-spacing: 10px;
   padding: 50px 0;
 }
-
 .wrapper{
   display: grid;
   grid-template-columns: 300px 300px 300px;
@@ -141,7 +144,6 @@ div.top-image {
 .opacity:hover{
   opacity: 1.0;
 }
-
 .bkgr-slct-pln{
   background: #d0dfea;
 }
@@ -158,18 +160,15 @@ table th {
   background-color: #6ba7eb;
   padding: 10px;
 }
-
-table tr:nth-child(2),
+table tr:nth-of-type(2),
 table tr:nth-child(4),
 table tr:nth-child(6) {
   background-color: #f9f9f9;
 }
-
 table tr:nth-child(3),
 table tr:nth-child(5) {
   background-color: #e0efff;
 }
-
 table td {
   border-right: 1px solid white;
   border-collapse: collapse;
@@ -204,7 +203,6 @@ i {
 .fab:hover, .fas:hover{
   color: #fff;
 }
-
 .bkgr-copyright{
   background: #cfd8dc;
 }
@@ -216,7 +214,6 @@ footer {
   bottom: 0;
   width: 100%;
 }
-
 footer p {
   text-align: right;
   font-size: 10px;
